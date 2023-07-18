@@ -349,6 +349,10 @@ img {
     grid-template-columns:1fr 1fr 1fr;
     grid-gap:8rem;
 }
+.ltrends .ltrends__card:hover{
+    transform:scale(1.1);
+    transition:.5s ease;
+}
 .ltrends .ltrends__card{
     background:#ffffff;
     border-radius:2rem;
@@ -369,6 +373,24 @@ img {
 }
 .ltrends .ltrends__card .ltrends__card__text a{
     color:#ffa700;
+}
+@media screen and (max-width: 500px){
+    .ltrends .ltrends__title{
+        text-align:center;
+    }
+    .ltrends .ltrends__wrapper{
+        display:unset;
+        display:flex;
+        flex-direction:column;
+}
+    .ltrends .ltrends__card{
+        margin-left:2rem;
+        margin-right:2rem;
+        border-radius:3rem;
+    }
+    .ltrends .ltrends__card:hover{
+        transform:scale(1);
+    }
 }
 
 /*---ABOUTME---*/
