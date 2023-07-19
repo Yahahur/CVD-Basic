@@ -703,9 +703,124 @@ img {
     text-align:center;
 }
 
+/*about me banner*/
+.banneraboutme{
+    background:#ffffff;
+    padding-top:15rem;
+    padding-bottom:5rem;
+}
+.banneraboutme .banneraboutme__wrapper{
+    display:grid;
+    grid-template-columns:3fr 2fr;
+    align-items:center;
+}
+.banneraboutme .banneraboutme__text h2{
+    font-size: 1.9rem;
+    line-height:1.1;
+}
+.banneraboutme .banneraboutme__text h1{
+    font-size: 9rem;
+    font-weight: 800;
+    color:#ffa700;
+    line-height:1.2;
+}
+.banneraboutme .banneraboutme__text p{
+    margin:5rem 0;
+    max-width:45rem;
+    text-align: justify;
+}
+.banneraboutme .banneraboutme__text ul{
+    display:flex;
+    align-items:center;
+    gap:2rem;
+}
 
+@media screen and (max-width:500px){
+    .banneraboutme .banneraboutme__wrapper{
+        display:grid;
+        grid-template-columns:1fr;
+    }
+    .banneraboutme  .banneraboutme__text{
+        order:2;
+        text-align: center;
+        margin:0 2rem;
+        margin-top:3rem;
+    }
+    .banneraboutme .banneraboutme__wrapper img{
+        width:20rem;
+        margin:0 auto; 
+    }
+    .banneraboutme .banneraboutme__text h1{
+        font-size:3rem;
+    }
+    .banneraboutme .banneraboutme__text p{
+        margin-top:2rem;
+        margin-bottom:5rem;
+    }
+}
 
-
+/*myrecentprojects*/
+/*latesttre*/
+.Myrecentprojects{
+    padding:5rem 0;
+    background:#2b2b2b;
+}
+.Myrecentprojects .Myrecentprojects__title h2{
+    color:#ffa700;
+    font-size:4rem;
+    font-weight:600;
+}
+.Myrecentprojects .Myrecentprojects__title p{
+    color:#ffffff;
+}
+.Myrecentprojects .Myrecentprojects__wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap:8rem;
+}
+.Myrecentprojects .Myrecentprojects__card:hover{
+    transform:scale(1.1);
+    transition:.5s ease;
+}
+.Myrecentprojects .Myrecentprojects__card{
+    background:#ffffff;
+    border-radius:2rem;
+    margin-top:8rem;
+}
+.Myrecentprojects .Myrecentprojects__card img{
+    width:100%;
+}
+.Myrecentprojects .Myrecentprojects__card .Myrecentprojects__card__text{
+    padding:2rem;
+}
+.Myrecentprojects .Myrecentprojects__card .Myrecentprojects__card__text h4{
+    color:#ffa700;
+    font-weight:600;
+}
+.Myrecentprojects .Myrecentprojects__card .Myrecentprojects__card__text p{
+    margin:3rem 0;
+}
+.Myrecentprojects .Myrecentprojects__card .Myrecentprojects__card__text a{
+    color:#ffa700;
+}
+@media screen and (max-width: 500px){
+    .Myrecentprojects .Myrecentprojects__title{
+        text-align:center;
+    }
+    .Myrecentprojects .Myrecentprojects__wrapper{
+        display:unset;
+        display:flex;
+        flex-direction:column;
+}
+    .Myrecentprojects .Myrecentprojects__card{
+        margin-left:2rem;
+        margin-right:2rem;
+        border-radius:3rem;
+    }
+    .Myrecentprojects .Myrecentprojects__card:hover{
+        transform:scale(1);
+    }
+}
 /*---REPEATABLE PATTERNS---*/
 .btn{
     display:inline-block;
