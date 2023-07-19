@@ -470,24 +470,24 @@ img {
 }
 
 
-/*--contacts--*/
-.contact{
+/*--FREE--*/
+.FREE{
     background:#ffa700;
     padding-top:3rem;
     padding-bottom:4rem;
 }
-.contact .contact__wrapper{
+.FREE .FREE__wrapper{
     text-align:center;
 }
 
-.contact .contact__text h2{
+.FREE .FREE__text h2{
     font-size:3rem;
     font-weight:900;
     margin-bottom:5rem;
     color:black;
     line-height:1.2;
 }
-.contact .contact__text p{
+.FREE .FREE__text p{
     margin:-4rem;
     margin-bottom:3rem;
     font-weight:600;
@@ -496,23 +496,23 @@ img {
     color:black;
 }
 @media screen and (max-width:500px){
-    .contact{
+    .FREE{
         background:#ffa700;
         padding-top:3rem;
         padding-bottom:4rem;
     }
-    .contact .contact__wrapper{
+    .FREE .FREE__wrapper{
         text-align:center;
     }
     
-    .contact .contact__text h2{
+    .FREE .FREE__text h2{
         font-size:2rem;
         font-weight:900;
         margin-bottom:5rem;
         color:black;
         line-height:1.2;
     }
-    .contact .contact__text p{
+    .FREE .FREE__text p{
         margin:-4rem;
         margin-bottom:3rem;
         font-weight:600;
@@ -520,6 +520,53 @@ img {
         text-align: center;
     }
 }
+
+
+
+/*FOOTER*/
+.footer{
+    background:#2b2b2b;
+    padding:1rem 0;
+}
+.footer p{
+    color:gray;
+}
+.footer .footer__wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.footer .footer__left{
+    display:flex;
+    gap:4rem;
+    align-items:center;
+}
+.footer .footer__left ul{
+    display:flex;
+    align-items:center;
+    gap:2.5rem;
+}
+.footer .footer__left ul li a{
+    font-size:2.5rem;
+    color:gray;
+}
+.footer .footer__left ul li:hover a{
+    color:#ffa700;
+}
+.footer .footer__left ul li:hover{
+    transform:scale(1.1);
+}
+@media screen and (max-width:500px){
+    .footer .footer__left{
+        flex-direction:column;
+        gap:1rem;
+    }
+    .footer .footer__wrapper{
+        flex-direction:column;
+        gap:1rem;
+}
+}
+
 
 /*---REPEATABLE PATTERNS---*/
 .btn{
