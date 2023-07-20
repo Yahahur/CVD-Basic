@@ -122,6 +122,7 @@ img {
     position:fixed;
     width:100%;
     z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .header .branding{
     display:flex;
@@ -859,33 +860,50 @@ img {
 
 
 /*contacts*/
-.contacts{
-    padding:15rem 0;
+.contact{
     background:#2b2b2b;
+    padding-top:15rem;
+    padding-bottom:5rem;
 }
-.contacts .contacts__wrapper h1{
+.contact .contact__text h1{
+    font-size: 5rem;
+    font-weight: 800;
     color:#ffa700;
-    font-size:5rem;
-    font-weight:600;
+    line-height:1;
 }
-.contacts .contacts__wrapper p{
-    font-size:2rem;
-    margin-top:5rem;
-    color:#ffffff;
-    margin: 3rem 0;
-    max-width: 50rem;
+.contact .contact__text p{
+    margin:5rem 0;
+    max-width:45rem;
+    font-size:4;
     text-align: justify;
+    color:#ffffff;
+    
 }
-.contacts .contacts__wrapper ul li a{
+.contact .contact__wrapper .contact__info ul{
+    
+}
+.contact .contact__wrapper .contact__info ul li{
+    height:4rem;
+    margin:2rem 0;
+    color:#ffffff;
+    width:40rem;
+}
+.contact .contact__wrapper .contact__info ul li a{
+    margin-right:4rem;
+    color:#ffa700;
     font-size:2.5rem;
-    color:#ffa700; 
 }
-.contacts .contacts__wrapper .contacts__icon ul{
-    color:#2b2b2b;
+.contact .contact__wrapper .social__info  ul{
     display:flex;
-    align-items:center;
-    gap:2rem;  
+    gap:2rem;
 }
+.contact .contact__wrapper .social__info  ul li a{
+    font-size:2.5rem;
+    color:#ffffff;
+}
+
+
+
 
 
 
@@ -925,4 +943,5 @@ img {
     border:1px solid #2b2b2b;
     color:#ffffff;
 }  
+
 
