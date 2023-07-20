@@ -757,7 +757,7 @@ img {
         margin-top:3rem;
     }
     .banneraboutme .banneraboutme__wrapper img{
-        width:20rem;
+        width:40rem;
         margin:0 auto; 
     }
     .banneraboutme .banneraboutme__text h2{
@@ -765,7 +765,7 @@ img {
         line-height:3rem;
     }
     .banneraboutme .banneraboutme__text h1{
-        font-size:3rem;
+        font-size:6rem;
     }
     .banneraboutme .banneraboutme__text p{
         margin-top:2rem;
@@ -853,10 +853,43 @@ img {
     .Myrecentprojects .Myrecentprojects__title p{
     margin-left:3rem;
     margin-right:3rem;
-    text-align: justify;
-    text-align: cennter;
+    text-align: center;
 }   
 }
+
+
+/*contacts*/
+.contacts{
+    padding:15rem 0;
+    background:#2b2b2b;
+}
+.contacts .contacts__wrapper h1{
+    color:#ffa700;
+    font-size:5rem;
+    font-weight:600;
+}
+.contacts .contacts__wrapper p{
+    font-size:2rem;
+    margin-top:5rem;
+    color:#ffffff;
+    margin: 3rem 0;
+    max-width: 50rem;
+    text-align: justify;
+}
+.contacts .contacts__wrapper ul li a{
+    font-size:2.5rem;
+    color:#ffa700; 
+}
+.contacts .contacts__wrapper .contacts__icon ul{
+    color:#2b2b2b;
+    display:flex;
+    align-items:center;
+    gap:2rem;  
+}
+
+
+
+
 /*---REPEATABLE PATTERNS---*/
 .btn{
     display:inline-block;
@@ -893,8 +926,3 @@ img {
     color:#ffffff;
 }  
 
-.fa-solid.fa-chevron-down:click{
-    background:#2b2b2b;
-    border:1px solid #ffa700;
-    color:#ffa700;
-}
