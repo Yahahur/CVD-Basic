@@ -121,6 +121,7 @@ img {
     position:relative;
     position:fixed;
     width:100%;
+    z-index: 999;
 }
 .header .branding{
     display:flex;
@@ -716,13 +717,13 @@ img {
 }
 .banneraboutme .banneraboutme__text h2{
     font-size: 1.9rem;
-    line-height:1.1;
+    line-height:0;
 }
 .banneraboutme .banneraboutme__text h1{
     font-size: 9rem;
     font-weight: 800;
     color:#ffa700;
-    line-height:1.2;
+    line-height:1;
 }
 .banneraboutme .banneraboutme__text ul li a{
     font-size:2.5rem;
@@ -738,7 +739,12 @@ img {
     align-items:center;
     gap:2rem;
 }
-
+.banneraboutme .container a{
+    display:flex;
+    justify-content:center;
+    color:#ffa700;
+    font-size:5rem;
+}
 @media screen and (max-width:500px){
     .banneraboutme .banneraboutme__wrapper{
         display:grid;
@@ -754,12 +760,28 @@ img {
         width:20rem;
         margin:0 auto; 
     }
+    .banneraboutme .banneraboutme__text h2{
+        font-size: 1.9rem;
+        line-height:3rem;
+    }
     .banneraboutme .banneraboutme__text h1{
         font-size:3rem;
     }
     .banneraboutme .banneraboutme__text p{
         margin-top:2rem;
         margin-bottom:5rem;
+    }
+    .banneraboutme .banneraboutme__text ul{
+        display:flex;
+        justify-content:center;
+        gap:2rem;
+    }
+    .banneraboutme .container a{
+        margin-top:5rem;
+        display:flex;
+        justify-content:center;
+        color:#ffa700;
+        font-size:5rem;
     }
     
 }
@@ -775,6 +797,8 @@ img {
     font-weight:600;
 }
 .Myrecentprojects .Myrecentprojects__title p{
+    font-size:2rem;
+    margin-top:2rem;
     color:#ffffff;
     text-align: justify;
 }
@@ -804,6 +828,7 @@ img {
 }
 .Myrecentprojects .Myrecentprojects__card .Myrecentprojects__card__text p{
     margin:3rem 0;
+    text-align: justify;
 }
 .Myrecentprojects .Myrecentprojects__card .Myrecentprojects__card__text a{
     color:#ffa700;
@@ -816,15 +841,21 @@ img {
         display:unset;
         display:flex;
         flex-direction:column;
-}
+    }
     .Myrecentprojects .Myrecentprojects__card{
         margin-left:2rem;
         margin-right:2rem;
         border-radius:3rem;
     }
     .Myrecentprojects .Myrecentprojects__card:hover{
-        transform:scale(1);
+        transform:scale(1.0);
     }
+    .Myrecentprojects .Myrecentprojects__title p{
+    margin-left:3rem;
+    margin-right:3rem;
+    text-align: justify;
+    text-align: cennter;
+}   
 }
 /*---REPEATABLE PATTERNS---*/
 .btn{
@@ -860,4 +891,10 @@ img {
     background:#2b2b2b;
     border:1px solid #2b2b2b;
     color:#ffffff;
-}   
+}  
+
+.fa-solid.fa-chevron-down:click{
+    background:#2b2b2b;
+    border:1px solid #ffa700;
+    color:#ffa700;
+}
