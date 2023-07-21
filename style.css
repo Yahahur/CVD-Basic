@@ -529,6 +529,7 @@ img {
 .footer{
     background:#2b2b2b;
     padding:1rem 0;
+    box-shadow: rgba(67, 71, 85, 0.27) 5px 2px 2em, rgba(90, 125, 188, 0.05) 5px 5em 5em;
 }
 .footer p{
     color:gray;
@@ -863,7 +864,7 @@ img {
 .contact{
     background:#2b2b2b;
     padding-top:15rem;
-    padding-bottom:5rem;
+    padding-bottom:23rem;
 }
 .contact .contact__text h1{
     font-size: 5rem;
@@ -873,34 +874,61 @@ img {
 }
 .contact .contact__text p{
     margin:5rem 0;
-    max-width:45rem;
+    max-width:50rem;
     font-size:4;
     text-align: justify;
     color:#ffffff;
-    
-}
-.contact .contact__wrapper .contact__info ul{
-    
 }
 .contact .contact__wrapper .contact__info ul li{
-    height:4rem;
+    height:5rem;
     margin:2rem 0;
     color:#ffffff;
-    width:40rem;
+    text-align: justify;
+    
 }
 .contact .contact__wrapper .contact__info ul li a{
-    margin-right:4rem;
+    margin-right:5rem;
     color:#ffa700;
-    font-size:2.5rem;
+    font-size:3rem;
+    text-align: justify;
 }
 .contact .contact__wrapper .social__info  ul{
     display:flex;
     gap:2rem;
+    margin-top:5rem;
 }
 .contact .contact__wrapper .social__info  ul li a{
-    font-size:2.5rem;
+    font-size:3rem;
     color:#ffffff;
+    text-align: justify;
 }
+.contact input{
+    width: 100%;
+    padding: 15px 20px;
+    margin: 5px 0;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.contact .contact__wrapper .text__box{
+    display:grid;
+    grid-template-columns:2fr 2fr;
+    margin-top:-38.5rem;
+}
+.contact input:last-child{
+    padding:1rem 0rem 12.5rem 0rem;
+    text-indent:2rem;
+}
+.contact .contact__wrapper .button__to{
+    display:flex;
+    margin-top:6rem;
+    margin-left:113.5rem;
+}
+@media screen and (max-width: 500px){
+
+}
+
 
 
 
