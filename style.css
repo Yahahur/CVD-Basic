@@ -1087,10 +1087,10 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: -100vw; /* Extend the background color to the left by the viewport width */
-    right: -100vw; /* Extend the background color to the right by the viewport width */
-    background-color: #2b2b2b; /* Same background color as .graphics__vd__wrapper */
-    z-index: -1; /* Push the pseudo-elements behind the content */
+    left: -100vw; 
+    right: -100vw; 
+    background-color: #2b2b2b; 
+    z-index: -1; 
 }
 .graphics__vd .hm-graphics__vd__wrapper{
     display: FLEX;
@@ -1121,16 +1121,16 @@ body {
         padding-bottom: 5rem;
         position: relative;
     }
-    .FREESERV::before,
-    .FREESERV::after {
+    .graphics_vd::before,
+    .graphics_vd::after {
         content: "";
         position: absolute;
         top: 0;
         bottom: 0;
-        left: -100vw; /* Extend the background color to the left by the viewport width */
-        right: -100vw; /* Extend the background color to the right by the viewport width */
-        background-color: #ffa700; /* Same background color as .FREESERV */
-        z-index: -1; /* Push the pseudo-elements behind the content */
+        left: -100vw;
+        right: -100vw; 
+        background-color: #2b2b2b; 
+        z-index: -1; 
     }
 }
     .graphics__vd .hm-graphics__vd__wrapper {
@@ -1147,9 +1147,11 @@ body {
     }
     
     .graphics__vd .hm-graphics__vd__text h3 {
-        font-size: 3rem;
-        font-weight: 800;
+        font-size: 8rem;
+        font-weight: 600;
         color: #ffa700;
+        line-height:1;
+        text-align: justify;
     }
     
     .graphics__vd .hm-graphics__vd__text p {
@@ -1208,6 +1210,7 @@ body {
     align-items:center;
     gap:2rem;
 }
+
 @media screen and (max-width:500px){
     .Socialmedspec .Socialmedspec__wrapper{
         display:grid;
@@ -1247,7 +1250,7 @@ body {
     background:#ffa700;
     padding-top: 3rem;
     padding-bottom: 4rem;
-    position: relative; /* Add this */
+    position: relative; 
 }
 .FREESERV::before,
 .FREESERV::after {
@@ -1255,10 +1258,10 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: -100vw; /* Extend the background color to the left by the viewport width */
-    right: -100vw; /* Extend the background color to the right by the viewport width */
-    background-color: #ffa700; /* Same background color as .FREESERV */
-    z-index: -1; /* Push the pseudo-elements behind the content */
+    left: -100vw; 
+    right: -100vw; 
+    background-color: #ffa700; 
+    z-index: -1; 
 }
 .FREESERV .FREESERV__wrapper{
     text-align:center;
@@ -1309,11 +1312,9 @@ body {
 /*footerservices*/
 .footersevices{
     background: #2b2b2b;
-    padding: 2rem 0;
+    padding: 1rem 0;
     box-shadow: rgba(67, 71, 85, 0.27) 5px 2px 2em, rgba(90, 125, 188, 0.05) 5px 5em 5em;
-    padding-left: 25rem;
-    padding-right: 25rem;
-    position: relative; /* Add this */
+    position: relative; 
 }
 .footersevices::before,
 .footersevices::after {
@@ -1321,10 +1322,10 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: -100vw; /* Extend the background color to the left by the viewport width */
-    right: -100vw; /* Extend the background color to the right by the viewport width */
-    background-color: #2b2b2b; /* Same background color as .footersevices */
-    z-index: -1; /* Push the pseudo-elements behind the content */
+    left: -100vw; 
+    right: -100vw; 
+    background-color: #2b2b2b; 
+    z-index: -1; 
 }
 .footersevices p{
     color:gray;
@@ -1361,7 +1362,7 @@ body {
         box-shadow: rgba(67, 71, 85, 0.27) 5px 2px 2em, rgba(90, 125, 188, 0.05) 5px 5em 5em;
         padding-left: 22rem;
         padding-right: 24rem;
-        position: relative; /* Add this */
+        position: relative;
     }
     .footersevices .footersevices__left{
         flex-direction:column;
@@ -1378,10 +1379,10 @@ body {
         position: absolute;
         top: 0;
         bottom: 0;
-        left: -100vw; /* Extend the background color to the left by the viewport width */
-        right: -100vw; /* Extend the background color to the right by the viewport width */
-        background-color: #2b2b2b; /* Same background color as .footersevices */
-        z-index: -1; /* Push the pseudo-elements behind the content */
+        left: -100vw; 
+        right: -100vw; 
+        background-color: #2b2b2b;
+        z-index: -1; 
     }
 }
 
@@ -1422,5 +1423,13 @@ body {
     border:1px solid #2b2b2b;
     color:#ffffff;
 }  
+.chevron-link {
+    display: flex;
+    justify-content: center;
+    color: #ffa700;
+    font-size: 5rem;
+    margin-top: 5rem;
+    text-decoration: none; 
+}
 
 
